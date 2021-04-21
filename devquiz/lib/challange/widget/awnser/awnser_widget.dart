@@ -68,7 +68,7 @@ class AwnserWidget extends StatelessWidget {
               ),
               child: isSelect
                   ? Icon(
-                      Icons.check,
+                      isSelect ? _selectedIconRight : Icons.check,
                       size: 16,
                       color: Colors.white,
                     )

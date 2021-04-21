@@ -9,10 +9,14 @@ class QuizWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            title,
-            style: AppTextStyles.heading,
+          Padding(
+            padding: const EdgeInsets.only(left: 16, top: 50, right: 16),
+            child: Text(
+              title,
+              style: AppTextStyles.heading,
+            ),
           ),
           SizedBox(height: 24),
           AwnserWidget(
